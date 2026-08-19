@@ -1,0 +1,39 @@
+body {
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f2f5;
+}
+
+form {
+  padding: 20px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+table {
+  margin: auto;
+}
+
+td {
+  padding: 8px;
+}
+
+input, textarea, button {
+  font-size: 18px;
+  padding: 6px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+button {
+  cursor: pointer;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
