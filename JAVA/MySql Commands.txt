@@ -1,0 +1,27 @@
+Win+R
+services.msc ---right click ---start
+net start MySQL80  --- (cmd) Start MySQL service (if not already running):
+
+mysql -u root -p   ---> login
+SHOW DATABASES;   --> List all databases available
+CREATE DATABASE nareshdb;   --> if nareshdb doesn’t exist, create it manually
+SELECT DATABASE();   --> which database is in use, Show current database
+USE nareshdb;   ---> Switch to another database
+SHOW TABLES;  --->  List tables
+DESCRIBE employees2;   ---> Check table structure
+SELECT * FROM employees2;   ---> View inserted rows
+
+javac -cp .;mysql-connector-j-26.7.0.jar CreateAndInsertExample.java
+java -cp .;mysql-connector-j-26.7.0.jar CreateAndInsertExample
+
+javac -cp .;mysql-connector-j-26.7.0.jar RetrieveEmployees.java
+java -cp .;mysql-connector-j-26.7.0.jar RetrieveEmployees
+
+
+DROP DATABASE nareshdb;
+DROP TABLE employees2;
+DELETE FROM employees2;   ---> Delete all rows but keep the table structure
+DELETE FROM employees2 WHERE name = 'Alice';  --> Delete specific rows
+
+
+
